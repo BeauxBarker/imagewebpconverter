@@ -1,0 +1,72 @@
+<svg class="animated-shells" xmlns="http://www.w3.org/2000/svg" width="1774" height="1991" viewBox="0 0 1774 1991" fill="none">
+  <style>
+    .animated-shells g {
+      opacity: 0;
+      animation: appear 1s calc((var(--i) + 1) * 0.2s) cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    .animated-shells path {
+      opacity: 0.2;
+    }
+
+    .animated-shells .shell-glow {
+      opacity: 0;
+      transform: translate3d(0, 0, 0);
+      filter: drop-shadow(0 0 12px white);
+      animation: glow 4s calc((var(--i) + 2) * 0.2s) linear infinite;
+    }
+
+    @media (prefers-reduced-motion) {
+      .animated-shells g {
+        opacity: 1;
+        animation: none;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        transform: translateY(18px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      50%,
+      100% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <defs>
+    <filter id="filter">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+    <mask id="glow-mask">
+      <ellipse cx="50%" cy="18%" rx="45%" ry="20%" fill="white" filter="url(#filter)" />
+
+    </mask>
+  </defs>
+  <g style="--i:3">
+    <path class="shell-glow" mask="url(#glow-mask)" stroke="#5D8DF5" stroke-width="2" d="M804.549 27.023c49.543-33.793 114.727-33.793 164.269 0l739.922 504.69a145.764 145.764 0 0 1 63.63 120.417v687.13c0 48.19-23.82 93.27-63.63 120.42l-739.922 504.69c-49.542 33.79-114.726 33.79-164.269 0L64.626 1459.68C24.816 1432.53 1 1387.45 1 1339.26V652.13a145.761 145.761 0 0 1 63.626-120.417L804.55 27.023Z" />
+    <path stroke="#5D8DF5" stroke-width="2" d="M804.549 27.023c49.543-33.793 114.727-33.793 164.269 0l739.922 504.69a145.764 145.764 0 0 1 63.63 120.417v687.13c0 48.19-23.82 93.27-63.63 120.42l-739.922 504.69c-49.542 33.79-114.726 33.79-164.269 0L64.626 1459.68C24.816 1432.53 1 1387.45 1 1339.26V652.13a145.761 145.761 0 0 1 63.626-120.417L804.55 27.023Z" />
+  </g>
+  <g style="--i:2">
+    <path class="shell-glow" mask="url(#glow-mask)" stroke="#5D8DF5" stroke-width="2" d="M830.92 334.27c33.843-23.084 78.371-23.084 112.215 0l505.455 344.764a99.58 99.58 0 0 1 43.46 82.259v469.397c0 32.91-16.27 63.71-43.46 82.26l-505.455 344.76c-33.844 23.08-78.372 23.08-112.215 0l-505.456-344.76A99.588 99.588 0 0 1 282 1230.69V761.293a99.573 99.573 0 0 1 43.464-82.259L830.92 334.27Z" />
+    <path stroke="#5D8DF5" stroke-width="2" d="M830.92 334.27c33.843-23.084 78.371-23.084 112.215 0l505.455 344.764a99.58 99.58 0 0 1 43.46 82.259v469.397c0 32.91-16.27 63.71-43.46 82.26l-505.455 344.76c-33.844 23.08-78.372 23.08-112.215 0l-505.456-344.76A99.588 99.588 0 0 1 282 1230.69V761.293a99.573 99.573 0 0 1 43.464-82.259L830.92 334.27Z" />
+  </g>
+  <g style="--i:1">
+    <path class="shell-glow" mask="url(#glow-mask)" stroke="#5D8DF5" stroke-width="2" d="M842.199 556.24c26.718-18.238 61.884-18.238 88.602 0l326.919 223.156a78.578 78.578 0 0 1 34.28 64.901V1146.7c0 25.97-12.83 50.26-34.28 64.9l-326.918 223.16c-26.719 18.24-61.885 18.24-88.603 0L515.278 1211.6A78.576 78.576 0 0 1 481 1146.7V844.297a78.582 78.582 0 0 1 34.278-64.901L842.199 556.24Z" />
+    <path stroke="#5D8DF5" stroke-width="2" d="M842.199 556.24c26.718-18.238 61.884-18.238 88.602 0l326.919 223.156a78.578 78.578 0 0 1 34.28 64.901V1146.7c0 25.97-12.83 50.26-34.28 64.9l-326.918 223.16c-26.719 18.24-61.885 18.24-88.603 0L515.278 1211.6A78.576 78.576 0 0 1 481 1146.7V844.297a78.582 78.582 0 0 1 34.278-64.901L842.199 556.24Z" />
+  </g>
+</svg>
