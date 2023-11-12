@@ -1,3 +1,6 @@
+/***** GLOBAL *******/
+/*******************/
+
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -10,31 +13,8 @@ body{
 
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     width: 100%;
-    height: 100vh;
     max-height: 100%;
     background-repeat: no-repeat;
-}
-
-hero{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-form{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-input{
-  
 }
 
 .shells{
@@ -46,7 +26,11 @@ input{
     width: 100%;
 
 }
+
+
 h1{
+    max-width: 500px;
+    text-wrap: wrap;
     margin: 0;
     color: rgb(231, 231, 231);
     font-size: 4rem;
@@ -54,9 +38,83 @@ h1{
 
 }
 
+p{
+    color:#051B3A;
+
+
+}
+
+
+
+/********  HEADER NAV ***********/
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #051B3A;
+    width: 100%;
+    padding: 1rem;
+    z-index: 99999;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+
+/********* HERO SECTION *********/
+
+.icon-container{
+    background-color: rgb(231,231,231);
+    padding: .5rem;
+
+    
+}
+
+hero{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.flex-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+card{
+    padding: 1rem;
+    position: relative;
+    width: 187px;
+    min-height: 150px;
+    margin-bottom: 1rem;
+    background: rgba(13, 80, 224, 0.26);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #051B3A;
+    margin-top: 1rem;
+}
+
+
+
 .form-wrapper{
     width: fit-content;
-    padding: 5rem 4rem;
+    text-align: center;
+    position: relative;
+    line-height: 4rem;
+    padding: 3rem 4rem;
     background: rgba(255, 255, 255, 0.164);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -68,9 +126,9 @@ h1{
 /* Style for the file input label as a button */
 .file-upload-button {
     display: inline-block;
-    background-color: #3498db; /* Button background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding to control button size */
+    background-color: #00B777; /* Button background color */
+    color: #051B3A; /* Text color */
+    padding: 0 20px; /* Padding to control button size */
     border: none; /* Remove button border */
     border-radius: 20px; /* Round the corners */
     cursor: pointer;
@@ -85,19 +143,58 @@ h1{
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
+ 
 }
 
 /* Style for the Convert button as a rounded button */
 .rounded-button {
-    padding: 10px 20px; /* Adjust the padding to control button size */
-    background-color: #3498db; /* Button background color */
-    color: #fff; /* Text color */
+    padding: 20px 20px; /* Adjust the padding to control button size */
+    background-color: #00B777; /* Button background color */
+    color: #051B3A; /* Text color */
     border: none; /* Remove button border */
     border-radius: 20px; /* Round the corners */
     cursor: pointer;
+    font-size: inherit;
 }
 
 /* Hover effect for the rounded button */
 .rounded-button:hover {
     background-color: #2980b9; /* Change the background color on hover */
 }
+
+
+/***** FOOTER *******/
+/*******************/
+
+footer{
+    background-color: #051937;
+    padding: 1rem;
+    color: #e8e8f1;
+    font-size: x-small;
+}
+
+
+/**************************/
+/******* MEDIA Q'S ********/
+/*************************/
+
+
+@media only screen and (max-width: 725px) {
+    .form-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-self: space-evenly;
+    }
+
+    h1{
+        font-size: 3rem;
+        display: block;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+  }
