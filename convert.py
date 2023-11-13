@@ -8,7 +8,6 @@ import requests
 
 app = Flask(__name__)
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -52,6 +51,10 @@ def index():
 
     return render_template('index.html')
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Use the following line to run the app locally
+    # app.run(debug=True)
+
+    # Use the following line to run the app in a production environment
+    app.run(host='0.0.0.0', port=80)
+
