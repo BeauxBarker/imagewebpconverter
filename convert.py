@@ -56,5 +56,5 @@ if __name__ == '__main__':
     # app.run(debug=True)
 
     # Use the following line to run the app in a production environment
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=5000)
 
