@@ -17,6 +17,10 @@ body{
     background-repeat: no-repeat;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 .shells{
     height: 100%;
     left: 0;
@@ -63,10 +67,18 @@ nav{
 /********* HERO SECTION *********/
 
 .icon-container{
-    background-color: rgb(231,231,231);
-    padding: .5rem;
-
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    background-color: rgb(196, 195, 195);
+    padding: .7rem;
+    right: 0;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 hero{
