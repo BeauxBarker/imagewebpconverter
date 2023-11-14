@@ -204,7 +204,7 @@ footer{
         display: block;
     }
 
-    .flex-container{
+    .flex-container.card{
         flex-direction: row;
         gap: 0;
     }
