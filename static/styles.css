@@ -44,7 +44,7 @@ h1{
 
 p{
     color:#051B3A;
-
+    line-height: .7rem;
 
 }
 
@@ -211,7 +211,7 @@ footer{
 
     card{
 
-        width: 134px;
+        width: 138px;
         height: 150px;
     }
 
