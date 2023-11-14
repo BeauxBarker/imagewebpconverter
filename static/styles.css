@@ -212,8 +212,7 @@ footer{
     card{
 
         width: 134px;
-        min-height: 150px;
-        
+        height: 150px;
     }
 
     .icon-container{
