@@ -44,7 +44,7 @@ h1{
 
 p{
     color:#051B3A;
-    line-height: 1rem;
+    line-height: 1.2rem;
 
 }
 
@@ -94,6 +94,16 @@ hero{
 
 .flex-container{
     display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+.form-flex-container{
     position: relative;
     width: 100%;
     justify-content: center;
