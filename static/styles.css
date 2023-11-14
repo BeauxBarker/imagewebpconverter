@@ -205,7 +205,8 @@ footer{
     }
 
     .flex-container{
-        flex-direction: column;
+        flex-direction: row;
+        gap: 0;
     }
 
     card{
